@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Narudžba</title>
+      <link rel="stylesheet" href="stil.css"/>
+  </head>
+  <body>
+      <header>
+        <h1 class="title">Narudžba</h1>
+      </header>
+      
+      <center>
+        <form action="Unos_podataka_N.php" method="post">
+            <label for="ImePrezime"></label>
+            <input type="text" name="imeprezime" id="imeIprezime" placeholder="Ime i Prezime" aria-label="Ime i Prezime" required><br/>
+            <label for="Email"></label>
+            <input type="text" name="email" id="email" placeholder="E-mail" aria-label="E-mail" required><br/>
+            <label for="Adresa"></label>
+            <input type="text" name="adresa" id="adresa" placeholder="Adresa" aria-label="Adresa" required><br/>
+            <label for="OIB"></label>
+            <input type="text" name="oib" id="oib" placeholder="OIB" aria-label="OIB" required><br/>
+            <label for="OdabirPaketa"></label>
+            <select name="odabirpaketa" id="odabirPaketa" style="width: 180px !important; min-width: 150px; max-width: 176px;" required>
+                <option value="Odabir Paketa" selected="">Odabir Paketa</option>
+                <option value="Paket 1">Paket 1</option>
+                <option value="Paket 2">Paket 2</option>
+                <option value="Paket 3">Paket 3</option>
+            </select><br/>
+            <label for="Napomena"></label>
+            <input type="text" name="napomena" id="napomena" placeholder="Napomena" aria-label="Napomena" required><br/>
+            <input type="submit" value="Pošalji">
+        </form>
+            <a href="http://localhost/Projekt/Web_Forma.html"> <input type="submit" value="Nazad"/></a>
+      </center>
+      
+      <footer>
+          <div class="modal-contact-link modal-animate-three" style="opacity: 1; transform: translate(0px, 0px);">
+            <a href="Mail To:mislav.mihic1997@gmail.com"><span class="fas fa-envelope-square"</span><i/>mislav.mihic1997@gmail.com</a>
+          </div>
+          <p id="currentTime"></p></i>
+      </footer>
+      <script src="skripta.js"></script>
+      <script src="https://kit.fontawesome.com/dd0e062aab.js" crossorigin="anonymous"></script>
+  </body>
+</html>
